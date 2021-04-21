@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*
+{
+   margin: 0px;
+   padding: 0px;
+
+}
+.container
+{
+   height: 100vh;
+   width: 100vw;
+}
+#header
+{
+   background: url(/img/burger.jpg);
+   background-size: cover;
+   margin: auto;
+   margin-top: 30px;
+   height: 90vh;
+   width: 90vw;
+}
+#header .content
+{
+   position: relative;
+   padding-top:12rem;
+   padding-left: 4rem;
+   display: flex;
+   flex-direction: column;
+}
+#header .content .food-logo
+{
+   position: relative;
+ height: 40px;
+ width:40px ;
+ margin-bottom: 13rem;
+ margin-top: -136px;
+
+}
+#header .content .deliver-header
+{
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 8px;
+   font-size: 2rem;
+   font-family: 'Oswald', sans-serif;
+   
+   
+}
+#header .content p
+{
+   margin-top: 10px;
+   color: white;  
+   letter-spacing: 2px;
+   font-size: 1.3rem;
+}
+#header .content button
+{
+   margin-top: 38px;
+   height: 31px;
+   border: none;
+   border-radius: 10px;
+   background-color: #f3c037;
+   color: white;
+   text-align: center;
+   align-items: center;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   width: 131px;
+
+}
+/* hero section ends here */
+/* intro section starts here */
+#intro
+{
+   margin: 0px;
+   padding: 0px;
+   height: 100vh;
+   width: 100vw;
+}
+
+#intro .container
+{
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   margin-left:51px;
+   margin-top: 72px;
+}
+#intro .container .pizzamage img
+{
+   height: 100vh;
+   width: 50vw;
+}
+#intro .content 
+{
+   margin-left: 44px;
+   position: relative;
+   height: 100vh;
+   margin-top: 8rem;
+}
+#intro .content h2
+{
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   font-size: 3rem;
+   font-family: 'Roboto Slab', serif;
+   
+}
+#intro .content .stars
+{
+   position: relative;
+   display: flex;
+}
+#intro .content .star
+{
+   margin-top: 20px;
+   margin-left: 3rem;
+}
+#intro .content .para{
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size: 20px;
+text-align: justify;
+word-spacing: 3px;
+margin-right: 50px;
+padding-right: 50px;
+line-height: 40px;
+margin-top: 20px;
+}
+#intro .content .icons
+{
+   display: flex;
+   position: relative;
+   flex-direction: row;
+   
+   justify-content: center;
+   align-items: center;
+   margin-top: 34px;
+    margin-right: 162px;
+}
+#intro .content .icon
+{
+   margin-left: 86px;
+   text-align: center;
+}
+#intro .content .icon p
+{
+   font-family: 'Ubuntu Condensed', sans-serif;
+   text-transform: capitalize;
+}
+#products
+{
+   margin-top: 8rem;
+   height: 100vh;
+   width: 100vw;
+   position: absolute;
+}
+#products .content
+{
+   display: flex;
+   flex-direction: row;
+}
+#products .product
+{
+   position: relative;
+   margin: 4px 47px 4px 47px;
+   display: flex;
+   flex-direction: column;
+}
+#products .product .prod-img img
+{
+   height: 326px;
+   width: 326px;
+   border: none;
+   border-radius: 2px;
+   transition: .7s all ease;
+}
+#products .product .prod-img img:hover
+{
+   height: 350px;
+   width: 328px;
+}
+
+#products .product .price
+{
+   font-family: 'Oswald', sans-serif; 
+   font-size: 3rem;
+   text-transform: capitalize;
+}
+#products .product .price span
+{
+   color: #f3c037;
+
+}
+#products .product .name{
+   
+   font-family: 'Ubuntu Condensed', sans-serif;
+   font-size: 2.6rem;
+   margin-bottom: 4px;
+   letter-spacing: 2px;
+}
+#products .product .desc{
+   font-family: 'Open Sans', sans-serif;
+   letter-spacing: 1px;
+   word-spacing: 4px;
+   text-align: justify;
+   transition: all .7s ease;
+}
+#products .product .add{
+   font-size: 2.5rem;
+   height: 69px;
+   width: 69px;
+   text-align: center;
+   align-items: center;
+   background-color: #f3c037;
+   color: white;
+   border-radius: 50px;
+   margin-bottom: 16px;
+   margin-top: 9px;
+   cursor: pointer;
+   
+}
+#products .product .add:hover{
+transition: all .7s ease;
+color: #f3c037;
+background-color: white;
+}
