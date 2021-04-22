@@ -16,7 +16,7 @@
 }
 #header
 {
-   background: url(/img/burger.jpg);
+   background: url(/img/burger-head.jpg);
    background-size: cover;
    margin: auto;
    margin-top: 30px;
@@ -215,7 +215,7 @@ margin-top: 20px;
    width: 69px;
    text-align: center;
    align-items: center;
-   background-color: #f3c037;
+   -color: #f3c037;
    color: white;
    border-radius: 50px;
    margin-bottom: 16px;
@@ -226,5 +226,83 @@ margin-top: 20px;
 #products .product .add:hover{
 transition: all .7s ease;
 color: #f3c037;
-background-color: white;
+-color: white;
+}
+/* product section ends here */
+
+/* offer section starts here */
+#offers
+{
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+   padding: 0%;
+   position: absolute;
+}
+#offers .container
+{
+   
+   margin-top: 57rem;
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   height: 80vh;
+   width: 100vw;
+}
+#offers .left
+{
+   align-items: center;
+   position: relative;
+   justify-content: center;
+   margin: auto;
+   text-align: center;
+   
+}
+#offers .info
+{
+  padding-top: 30vh;
+}
+#offers .centre
+{
+   align-items: center;
+   position: relative;
+   justify-content: center;
+   margin: auto;
+   text-align: center;
+}
+#offers .right
+{
+   align-items: center;
+   position: relative;
+   justify-content: center;
+   margin: auto;
+   text-align: center;
+}
+#offers .left .img{
+background: url(/img/ulvi-safari-1rCjpJ6GFXw-unsplash.jpg);
+background-size: cover;
+height: 90vh;
+width: 25vw;
+margin-left: 25px;
+border-radius: 2px;
+
+}
+#offers .centre .img{
+background: url(/img/brooke-lark-GJMlSBS0FhU-unsplash.jpg);
+background-size: cover;
+margin-left: 25px;
+
+height: 90vh;
+width: 45vw;
+border-radius: 2px;
+
+}
+#offers .right .img{
+   background: url(/img/megan-markham-rh0YhbINkF4-unsplash.jpg);
+   background-size: cover;
+height: 90vh;
+margin-left: 25px;
+border: none;
+border-radius: 2px;
+width: 25vw;
 }
