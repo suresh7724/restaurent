@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -57,6 +58,7 @@
    letter-spacing: 2px;
    font-size: 1.3rem;
 }
+
 #header .content button
 {
    margin-top: 38px;
@@ -70,7 +72,15 @@
    text-transform: uppercase;
    letter-spacing: 1px;
    width: 131px;
-
+   
+}
+#header .content button:hover
+{
+   color: #f3c037;
+   background-color: white;
+   transition: 1s ease background-color,color;
+   font-weight: bold;
+   cursor: pointer;
 }
 /* hero section ends here */
 /* intro section starts here */
@@ -157,6 +167,7 @@ margin-top: 20px;
    height: 100vh;
    width: 100vw;
    position: absolute;
+   z-index: 1;
 }
 #products .content
 {
@@ -209,25 +220,28 @@ margin-top: 20px;
    text-align: justify;
    transition: all .7s ease;
 }
-#products .product .add{
+#products .add:hover
+{
+   color: #f3c037;
+   background-color: white;
+   transition: .6s all ease;
+}
+#products  .add{
+   cursor: pointer;
    font-size: 2.5rem;
    height: 69px;
    width: 69px;
    text-align: center;
    align-items: center;
-   -color: #f3c037;
    color: white;
+   background-color: #f3c037;
    border-radius: 50px;
    margin-bottom: 16px;
    margin-top: 9px;
    cursor: pointer;
    
 }
-#products .product .add:hover{
-transition: all .7s ease;
-color: #f3c037;
--color: white;
-}
+
 /* product section ends here */
 
 /* offer section starts here */
@@ -238,6 +252,7 @@ color: #f3c037;
    margin: 0;
    padding: 0%;
    position: absolute;
+   z-index: -1;
 }
 #offers .container
 {
@@ -249,18 +264,52 @@ color: #f3c037;
    height: 80vh;
    width: 100vw;
 }
-#offers .left
-{
-   align-items: center;
-   position: relative;
-   justify-content: center;
-   margin: auto;
-   text-align: center;
+
+#offers .left .title h2{
+   color: white;
+   text-shadow: white;
+   font-family: 'Open Sans', sans-serif;
+   outline: white;
+   font-size: 3rem;
+   margin-left: 60px;
+   line-height: 0px;
    
+   text-transform: capitalize;
+   transition: ease 1s padding-top;
+   /* padding-top: 4rem; */
+}
+#offers .left:hover .title h2{
+   /* line-height: 7rem; */
+   padding-top: 4rem;
+}
+#offers .left .title span
+{
+   margin-right: 100px;
+   margin-top: -40px;
+   color: white;
+   text-shadow: white;
+   font-family: 'Open Sans', sans-serif;
+   outline: white;
+   text-transform: capitalize;
+   font-size: 3rem;
+}
+#offers .left .desc
+{
+   color: #ff1f5a;
+   text-transform: capitalize;
+   font-size: 2rem;
+padding-top: 16vh;
+line-height: 29rem;
+transition: ease 1s line-height;
+}
+#offers .left:hover .desc
+{
+   line-height: 0rem;
 }
 #offers .info
 {
-  padding-top: 30vh;
+  padding-top: 6vh;
+  transition: all 1s ease;
 }
 #offers .centre
 {
@@ -297,12 +346,94 @@ width: 45vw;
 border-radius: 2px;
 
 }
-#offers .right .img{
+#offers .centre
+{
+   align-items: center;
+   justify-content: center;
+}
+#offers .centre .info{
+   transition: none;
+   padding-top: 31vh;
+}
+#offers .centre .info .title
+{
+   text-transform: uppercase;
+   letter-spacing: 1.4rem;
+   font-size: 2rem;
+   font-weight: bold;
+   font-family: 'Roboto Slab', serif;
+   line-height: 4rem;
+   transition: .6s ease letter-spacing,text-transform;
+}
+#offers .centre:hover .info .title
+{
+   letter-spacing: 1rem;
+   
+   /* text-transform: capitalize; */
+}
+
+#offers .centre .info .offer
+{
+   text-transform: capitalize;
+   font-family: 'Ubuntu Condensed', sans-serif;
+   font-size: 4rem;
+   letter-spacing: 1rem;
+   font-weight: 600;
+   transition: .7s ease letter-spacing;
+}
+#offers .centre:hover .info .offer
+{
+   letter-spacing: 1.5rem;
+}
+
+#offers .centre .info .span
+{
+   font-size: 1.5rem;
+   line-height: 5rem;
+   text-decoration: underline;
+ line-height: 19rem;
+ color: #60435F;
+ cursor: pointer;
+}
+#offers .right .img
+{
    background: url(/img/megan-markham-rh0YhbINkF4-unsplash.jpg);
    background-size: cover;
-height: 90vh;
-margin-left: 25px;
-border: none;
-border-radius: 2px;
-width: 25vw;
+   height: 90vh;
+   margin-left: 25px;
+   border: none;
+   border-radius: 2px;
+   width: 25vw;
 }
+
+#offers .right .info
+{
+   padding-top: 20vh;
+   transition: none;
+   
+}
+#offers .right .info .heading
+{
+   font-size: 4rem;
+   color: #f3c037;
+   letter-spacing: .5rem;
+   font-family: 'Noto Sans JP', sans-serif;
+}
+#offers .right .info .desc
+{
+   font-size: 1.3rem;
+   line-height: 38rem;
+   color: #f05945;
+   font-family: 'Noto Sans JP', sans-serif;
+   letter-spacing: .5rem;
+   text-transform: capitalize;
+   transition: .7s ease line-height;
+   
+}
+#offers .right:hover .info .desc
+{
+   line-height: 2rem;
+
+}
+
+/* Offers section ends here */
