@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="style/style.css">
+    <link type="text/css" rel="stylesheet" href="style/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="logic/lightslider.js"></script>
+
+
 </head>
 
 <body>
@@ -122,35 +127,308 @@
             <div class="centre">
                 <div class="img">
                     <div class="info">
-                    <div class="title">
-                        special offer
+                        <div class="title">
+                            special offer
+                        </div>
+                        <div class="offer">
+                            buy 2 get 3
+                        </div>
+                        <div class="span">
+                            <span>
+                                use our special offer quicker!
+                            </span>
+                        </div>
                     </div>
-                    <div class="offer">
-                        buy 2 get 3
-                    </div>
-                    <div class="span">
-                        <span>
-                            use our special offer quicker!
-                        </span>
-                    </div>
-                </div>
                 </div>
             </div>
             <div class="right">
                 <div class="img">
                     <div class="info">
-                    <div class="heading">
-                        15%off
+                        <div class="heading">
+                            15%off
+                        </div>
+                        <div class="desc">
+                            <h2>first offer</h2>
+                        </div>
                     </div>
-                    <div class="desc">
-                        <h2>first offer</h2>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="product-icons">
+        <div class="container">
+            <div class="icons">
+                <div class="burger">
+                    <img src="https://img.icons8.com/plasticine/100/000000/hamburger.png" />
+                    <h3>burgers</h3>
+                </div>
+                <div class="pizza">
+                    <img src="https://img.icons8.com/doodle/96/000000/pizza--v1.png" />
+                    <h3>pizza's</h3>
+                </div>
+                <div class="drink">
+                    <img src="https://img.icons8.com/emoji/48/000000/tropical-drink.png" />
+                    <h3>drinks</h3>
+                </div>
+                <div class="pasta">
+                    <img src="https://img.icons8.com/bubbles/50/000000/restaurant.png" />
+                    <h3>pasta</h3>
+                </div>
+                <div class="soup"><img src="https://img.icons8.com/doodle/48/000000/soup-plate.png" />
+                    <h3>soup</h3>
+                </div>
+                <div class="sushi">
+                    <img src="https://img.icons8.com/plasticine/100/000000/sushi.png" />
+                    <h3>sushi</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <ul id="autoWidth" class="cs-hidden">
+        <!--1------------------------------------>	
+      <li class="item-a">
+    <!--box-slider--------------->
+        <div class="box">
+        <!--img-box---------->
+        <div class="slide-img">
+        <img alt="1" src="/img/1.jfif">
+        <!--overlayer---------->
+        <div class="overlay">
+        <!--buy-btn------>	
+        <a href="#" class="buy-btn">Buy Now</a>	
+        </div>
+        </div>
+        <!--detail-box--------->
+        <div class="detail-box">
+        <!--type-------->
+        <div class="type">
+        <a href="#">Pizza</a>
+        <span>Fresh </span>
+        </div>
+        <!--price-------->
+        <a href="#" class="price">$23</a>
+            
+        </div>
+        
+        </div>		
+    </li>
+        <!--2------------------------------------>	
+      <li class="item-b">
+    <!--box-slider--------------->
+        <div class="box">
+        <!--img-box---------->
+        <div class="slide-img">
+        <img alt="2" src="/img/pasta.jfif">
+        <!--overlayer---------->
+        <div class="overlay">
+        <!--buy-btn------>	
+        <a href="#" class="buy-btn">Buy Now</a>	
+        </div>
+        </div>
+        <!--detail-box--------->
+        <div class="detail-box">
+        <!--type-------->
+        <div class="type">
+        <a href="#"></a>
+        <span>Hot</span>
+        </div>
+        <!--price-------->
+        <a href="#" class="price">$20</a>
+            
+        </div>
+        
+        </div>		
+    </li>
+        <!--3------------------------------------>	
+      <li class="item-c">
+    <!--box-slider--------------->
+        <div class="box">
+        <!--img-box---------->
+        <div class="slide-img">
+        <img alt="3" src="/img/pizzza margo.jfif">
+        <!--overlayer---------->
+        <div class="overlay">
+        <!--buy-btn------>	
+        <a href="#" class="buy-btn">Buy Now</a>	
+        </div>
+        </div>
+        <!--detail-box--------->
+        <div class="detail-box">
+        <!--type-------->
+        <div class="type">
+        <a href="#">Pizza Margo</a>
+        <span>Noe Arrival</span>
+        </div>
+        <!--price-------->
+        <a href="#" class="price">$26</a>
+            
+        </div>
+        
+        </div>		
+    </li>
+        <!--4------------------------------------>	
+      <li class="item-d">
+    <!--box-slider--------------->
+        <div class="box">
+        <!--img-box---------->
+        <div class="slide-img">
+        <img alt="4" src="/img/soup.jfif">
+        <!--overlayer---------->
+        <div class="overlay">
+        <!--buy-btn------>	
+        <a href="#" class="buy-btn">Buy Now</a>	
+        </div>
+        </div>
+        <!--detail-box--------->
+        <div class="detail-box">
+        <!--type-------->
+        <div class="type">
+        <a href="#">Soup Mix</a>
+        <span>Hot</span>
+        </div>
+        <!--price-------->
+        <a href="#" class="price">$27</a>
+            
+        </div>
+        
+        </div>		
+    </li>
+        <!--5------------------------------------>	
+      <li class="item-e">
+    <!--box-slider--------------->
+        <div class="box">
+        <!--img-box---------->
+        <div class="slide-img">
+        <img alt="5" src="img/2.jfif">
+        <!--overlayer---------->
+        <div class="overlay">
+        <!--buy-btn------>	
+        <a href="#" class="buy-btn">Buy Now</a>	
+        </div>
+        </div>
+        <!--detail-box--------->
+        <div class="detail-box">
+        <!--type-------->
+        <div class="type">
+        <a href="#">Soup Tomato</a>
+        <span>Tasty</span>
+        </div>
+        <!--price-------->
+        <a href="#" class="price">$26</a>
+            
+        </div>
+        
+        </div>		
+    </li>
+        <!--6------------------------------------>	
+      <li class="item-f">
+    <!--box-slider--------------->
+        <div class="box">
+        <!--img-box---------->
+        <div class="slide-img">
+        <img alt="6" src="/img/3.jfif">
+        <!--overlayer---------->
+        <div class="overlay">
+        <!--buy-btn------>	
+        <a href="#" class="buy-btn">Buy Now</a>	
+        </div>
+        </div>
+        <!--detail-box--------->
+        <div class="detail-box">
+        <!--type-------->
+        <div class="type">
+        <a href="#">Soup Pumpkin</a>
+        <span>Hotter</span>
+        </div>
+        <!--price-------->
+        <a href="#" class="price">$30</a>
+            
+        </div>
+        
+        </div>		
+    </li>
+        <!--7------------------------------------>	
+      <li class="item-g">
+    <!--box-slider--------------->
+        <div class="box">
+        <!--img-box---------->
+        <div class="slide-img">
+        <img alt="7" src="/img/4.jfif">
+        <!--overlayer---------->
+        <div class="overlay">
+        <!--buy-btn------>	
+        <a href="#" class="buy-btn">Buy Now</a>	
+        </div>
+        </div>
+        <!--detail-box--------->
+        <div class="detail-box">
+        <!--type-------->
+        <div class="type">
+        <a href="#">Chicken Soup</a>
+        <span>Yummy!!</span>
+        </div>
+        <!--price-------->
+        <a href="#" class="price">$33</a>
+            
+        </div>
+        
+        </div>		
+    </li>
+        <!--8------------------------------------>	
+      <li class="item-h">
+    <!--box-slider--------------->
+        <div class="box">
+        <!--img-box---------->
+        <div class="slide-img">
+        <img alt="8" src="/img/5.jfif">
+        <!--overlayer---------->
+        <div class="overlay">
+        <!--buy-btn------>	
+        <a href="#" class="buy-btn">Buy Now</a>	
+        </div>
+        </div>
+        <!--detail-box--------->
+        <div class="detail-box">
+        <!--type-------->
+        <div class="type">
+        <a href="#">Sushii</a>
+        <span>Crunchy</span>
+        </div>
+        <!--price-------->
+        <a href="#" class="price">$43</a>
+            
+        </div>
+        
+        </div>		
+    </li>
+      
+    </ul>
+        </section>
+        <section id="contact">
+            <div class="content container">
+                <div class="email">
+                    <h1>SIGN UP FOR UPDATE</h1>
+                    <br>
+                    <br>
+                    <span>
+                        To stay up-to-date on our promotions , discount, sales, special offers and more.
+                    </span>
+                    <br>
+                    <input type="email">
+                    <div class="social">
+                        <div class="fb">
+                            <img src="/img/fb.png" alt="">
+                        </div>
+                        <div class="pinterst">
+                            <img src="https://img.icons8.com/ios/50/000000/pinterest--v1.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+    <script src="logic/app.js"></script>
 </body>
 
 </html>
